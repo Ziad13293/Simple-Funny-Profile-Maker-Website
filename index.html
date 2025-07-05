@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charsel="UTF-8">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
-    <title> Funny Profile Maker </title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
-     <div class="container">
-        <h1>Funny Profile Maker</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Face Maker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Funny Face Maker</h1>
+            <p>Upload your photo and add hilarious effects!</p>
+        </header>
 
-         <div class="profile-editor">
-              <button class="arrow-btn left-arrow">←</button>
+        <main>
+            <div class="editor-container">
+                <button class="nav-arrow left-arrow" aria-label="Previous effect">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                    </svg>
+                </button>
 
-             <div class="profile-container">
-                 <img id="profile-pic" src="defult-avatar.png" alt="Profile Picture">
-                 <img id="funny-feature" class="feature" src="" alt="Feature" style="display: none;">
-             </div>
+                <div class="profile-display">
+                    <div class="image-container">
+                        <img id="profile-image" src="./assets/default-avatar.png" alt="Your profile picture">
+                        <img id="effect-image" class="effect" src="" alt="Effect" style="opacity: 0;">
+                    </div>
+                    <div class="effect-name" id="effect-name">No effect selected</div>
+                </div>
 
-             <button class="arrow-btn right-arrow">→</button>
-          </div>
+                <button class="nav-arrow right-arrow" aria-label="Next effect">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                    </svg>
+                </button>
+            </div>
 
-          <div class="controls">
-              <input type="file" id="image uploud" accept="image/*">
-              <button id="downloud-btn">Downloud Funny Profile</button>
-         </div>
-       </div>
+            <div class="controls">
+                <label for="image-upload" class="upload-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    Upload Photo
+                    <input type="file" id="image-upload" accept="image/*">
+                </label>
 
-      <script src="script.js"></script>
- </body>
- </html>
+                <button id="download-btn" class="download-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                    Download
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with laughter ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
