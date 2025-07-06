@@ -1,4 +1,4 @@
-# Simple-Funny-Profile-Maker-Website
+# COOKIE SUSPECT MYSTERY!
 
 <img width="718" alt="Screenshot 2025-07-06 at 5 22 26 PM" src="https://github.com/user-attachments/assets/89dd9981-3ce9-44d0-ba1b-6920ba43c00c" />
 
